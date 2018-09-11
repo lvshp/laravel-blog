@@ -8,6 +8,7 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <link rel="stylesheet" type="text/css" href="{{ URL::asset('/css/index.css') }}" media="all" />
+    <script type="text/javascript" src="{{URL::asset('/showdown/dist/showdown.min.js')}}"></script>
 </head>
 
 <body class="home blog custom-background round-avatars">
@@ -144,6 +145,7 @@
     <script type='text/javascript' src='{{URL::asset('/js/particles.js')}}'></script>
     <script type='text/javascript' src='{{URL::asset('/js/aos.js')}}'></script>
 
+    @yield('js')
 </body>
 
 </html>
